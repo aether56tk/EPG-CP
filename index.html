@@ -459,6 +459,64 @@ body>header#top{display:none}
 #workspace .pagehead{margin-bottom:20px}
 @media(max-width:600px){.site-nav{scroll-margin-top:0}.site-links{scrollbar-width:thin}.site-wordmark{font-size:12px}.site-wordmark small{font-size:7px}.site-footer{padding-bottom:22px}}
 
+
+/* Screenshot-specific refinement: spacious, balanced tool cards and vision layout */
+.tool-showcase{padding:38px clamp(20px,3vw,48px) 30px}
+.section-heading{margin-bottom:24px}
+.section-heading h2{font-size:clamp(28px,3.1vw,38px);line-height:1.12}
+.showcase-grid{gap:12px}
+.showcase-card{height:238px;padding:22px 20px;border-radius:6px}
+.showcase-title{max-width:220px}
+.showcase-title>span{font-size:9px;letter-spacing:.18em}
+.showcase-title h3{font-size:18px;line-height:1.25;margin:14px 0 10px}
+.showcase-title p{font-size:11px;line-height:1.65;max-width:175px}
+.circle-arrow{left:20px;bottom:17px;width:30px;height:30px}
+.mini-palate-art{right:-3px;bottom:-24px;width:164px;height:164px}
+.mapping-art{right:10px;bottom:-12px;width:150px;height:158px}
+.sensor-art{right:7px;bottom:9px}
+.report-art{right:13px;bottom:-17px;width:120px;height:153px}
+.vision-section{min-height:340px;grid-template-columns:44px minmax(255px,1fr) minmax(220px,1.05fr) minmax(205px,.85fr);gap:clamp(20px,3vw,42px);padding:44px clamp(24px,5vw,72px)}
+.vision-index{height:220px;font-size:11px}
+.vision-copy .site-kicker{font-size:10px;letter-spacing:.22em;margin-bottom:22px}
+.vision-copy h2{font-size:clamp(30px,3.2vw,43px);line-height:1.14;max-width:420px;margin-bottom:18px}
+.vision-copy>p:not(.site-kicker){font-size:12px;line-height:1.85;max-width:430px;margin-bottom:21px}
+.vision-copy .site-btn{padding:14px 21px}
+.anatomy-visual{height:260px;overflow:visible}
+.anatomy-ring{width:205px;height:205px;box-shadow:0 0 0 20px #3f899014,0 0 0 40px #3f899010}
+.anatomy-profile{font-size:205px}
+.anatomy-wave{width:280px;top:62%;left:-2%}
+.wave-two{top:71%}
+.anatomy-label{font-size:8px;letter-spacing:.16em;white-space:nowrap}
+.vision-points{gap:22px}
+.vision-points>div{gap:14px}
+.vision-points>div>b{font-size:23px;width:32px;flex-shrink:0}
+.vision-points strong{font-size:11px}
+.vision-points small{font-size:10px;line-height:1.6}
+@media(max-width:1000px){
+ .vision-section{grid-template-columns:30px minmax(220px,1fr) minmax(170px,.85fr);gap:22px;padding:38px 24px}
+ .anatomy-visual{height:220px}
+ .vision-points{grid-column:2/-1;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+}
+@media(max-width:680px){
+ .tool-showcase{padding:30px 16px 24px}
+ .showcase-card{height:205px;padding:18px}
+ .showcase-title h3{font-size:17px}
+ .showcase-title p{font-size:10px;max-width:170px}
+ .vision-section{grid-template-columns:24px minmax(0,1fr);gap:16px;padding:32px 18px}
+ .vision-index{grid-row:1/4;height:185px;font-size:9px}
+ .vision-copy{grid-column:2}
+ .vision-copy h2{font-size:clamp(29px,8vw,38px)}
+ .vision-copy>p:not(.site-kicker){font-size:11px}
+ .anatomy-visual{grid-column:2;height:180px;max-width:100%}
+ .anatomy-ring{width:150px;height:150px;box-shadow:0 0 0 14px #3f899014,0 0 0 28px #3f899010}
+ .anatomy-profile{font-size:155px}
+ .anatomy-wave{width:210px}
+ .anatomy-label{font-size:7px}
+ .vision-points{grid-column:2;grid-template-columns:1fr 1fr;gap:14px}
+ .vision-points strong{font-size:10px}
+ .vision-points small{font-size:9px}
+}
+
 </style></head><body>
 <header><div class="brand"><div class="logo">⌁</div><div><h1>Wireless EPG-CP</h1><p>Smart Palate & Speech Analysis System · Research prototype</p></div></div><span class="status">● DEMO MODE · No clinical device connected</span></header>
 
