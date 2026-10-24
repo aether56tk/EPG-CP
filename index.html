@@ -517,6 +517,65 @@ body>header#top{display:none}
  .vision-points small{font-size:9px}
 }
 
+
+/* v2 visual rebuild — high-specificity overrides to ensure the refreshed design wins */
+#technology.tool-showcase{padding:56px clamp(20px,4vw,64px) 48px!important;background:#f4f6f5!important}
+#technology .section-heading{align-items:end!important;margin-bottom:28px!important}
+#technology .section-heading .site-kicker{color:#087c83!important;font-size:10px!important}
+#technology .section-heading h2{font-size:clamp(32px,4vw,48px)!important;font-weight:600!important;letter-spacing:-.065em!important;max-width:700px!important}
+#technology .text-link{border-bottom:1px solid #aab8b8!important;padding-bottom:8px!important;font-size:12px!important}
+#technology .showcase-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+#technology .showcase-card{height:290px!important;padding:24px!important;border-radius:9px!important;box-shadow:0 14px 30px #0c202012!important;transition:transform .22s,box-shadow .22s!important}
+#technology .showcase-card:hover{transform:translateY(-5px)!important;box-shadow:0 22px 40px #0c202026!important}
+#technology .showcase-card:after{background:linear-gradient(180deg,#061014d9 0%,#07101480 47%,#07101400 100%)!important}
+#technology .showcase-title{max-width:230px!important}
+#technology .showcase-title>span{display:inline-flex!important;border:1px solid #ffffff70!important;border-radius:20px!important;padding:5px 8px!important;font-size:9px!important}
+#technology .showcase-title h3{font-size:21px!important;font-weight:600!important;line-height:1.2!important;margin:17px 0 10px!important}
+#technology .showcase-title p{font-size:12px!important;line-height:1.65!important;max-width:195px!important;color:#e0e8e8!important}
+#technology .mini-palate-art{width:190px!important;height:190px!important;right:-2px!important;bottom:-24px!important;border-width:9px!important}
+#technology .mapping-art{width:174px!important;height:185px!important;right:8px!important;bottom:-16px!important}
+#technology .sensor-art{transform:scale(1.12)!important;transform-origin:bottom right!important;right:20px!important;bottom:20px!important}
+#technology .report-art{width:137px!important;height:166px!important;right:24px!important;bottom:-17px!important}
+#technology .circle-arrow{width:34px!important;height:34px!important;left:23px!important;bottom:22px!important;font-size:18px!important;background:#ffffff12!important}
+.vision-section{grid-template-columns:42px minmax(280px,1.05fr) minmax(230px,1fr) minmax(205px,.8fr)!important;gap:clamp(20px,3.2vw,48px)!important;min-height:410px!important;padding:58px clamp(22px,5vw,76px)!important;background:radial-gradient(ellipse at 63% 50%,#0b252a 0,#03090a 42%,#020607 100%)!important}
+.vision-index{height:255px!important;font-size:11px!important}
+.vision-copy .site-kicker{font-size:10px!important;letter-spacing:.24em!important;margin-bottom:24px!important;color:#7cd6d8!important}
+.vision-copy h2{font-size:clamp(34px,3.8vw,49px)!important;font-weight:550!important;line-height:1.08!important;letter-spacing:-.06em!important;max-width:480px!important;margin-bottom:20px!important}
+.vision-copy>p:not(.site-kicker){font-size:13px!important;line-height:1.9!important;max-width:440px!important;color:#c1ced0!important}
+.vision-copy .site-btn{padding:15px 22px!important}
+.anatomy-visual{height:290px!important;overflow:visible!important}
+.anatomy-ring{width:228px!important;height:228px!important;border-color:#39858a!important;box-shadow:0 0 0 18px #1f656a18,0 0 0 38px #1b555a12,0 0 55px #23bacb16!important}
+.anatomy-profile{font-size:220px!important;color:#a4c4c8!important;opacity:.94!important;text-shadow:0 0 30px #64d5df66!important}
+.anatomy-wave{width:310px!important;border-top-width:2px!important;border-color:#58d0d6 transparent transparent!important}
+.anatomy-label{font-size:8px!important;letter-spacing:.18em!important;color:#8edfe4!important}
+.vision-points{gap:25px!important}
+.vision-points>div{gap:15px!important}
+.vision-points>div>b{font-size:24px!important;color:#54d0e2!important}
+.vision-points strong{font-size:12px!important}
+.vision-points small{font-size:10px!important;line-height:1.65!important;color:#afc1c5!important}
+@media(max-width:1000px){
+ #technology .showcase-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #technology .showcase-card{height:250px!important}
+ .vision-section{grid-template-columns:30px minmax(220px,1fr) minmax(190px,.9fr)!important;padding:42px 24px!important}
+ .vision-points{grid-column:2/-1!important;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:600px){
+ #technology.tool-showcase{padding:34px 16px!important}
+ #technology .section-heading h2{font-size:32px!important}
+ #technology .showcase-grid{grid-template-columns:1fr!important;gap:12px!important}
+ #technology .showcase-card{height:225px!important}
+ #technology .showcase-title h3{font-size:20px!important}
+ .vision-section{grid-template-columns:22px minmax(0,1fr)!important;padding:36px 18px!important;gap:16px!important}
+ .vision-index{grid-row:1/4!important;height:200px!important}
+ .vision-copy{grid-column:2!important}
+ .vision-copy h2{font-size:clamp(32px,9vw,42px)!important}
+ .anatomy-visual{grid-column:2!important;height:190px!important}
+ .anatomy-ring{width:155px!important;height:155px!important}
+ .anatomy-profile{font-size:150px!important}
+ .anatomy-wave{width:220px!important}
+ .vision-points{grid-column:2!important;grid-template-columns:1fr 1fr!important;gap:16px!important}
+}
+
 </style></head><body>
 <header><div class="brand"><div class="logo">⌁</div><div><h1>Wireless EPG-CP</h1><p>Smart Palate & Speech Analysis System · Research prototype</p></div></div><span class="status">● DEMO MODE · No clinical device connected</span></header>
 
