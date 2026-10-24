@@ -245,6 +245,71 @@ button{border-radius:4px}
 @media(max-width:1000px){.hero{min-height:540px;padding:48px 5vw}.module-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.module-card{min-height:260px}.vision-band{padding:48px 5vw}}
 @media(max-width:620px){header{padding:14px 18px}.brand h1{font-size:13px;letter-spacing:.13em}.brand p{font-size:9px;max-width:200px}.status{font-size:8px}.hero{grid-template-columns:1fr;padding:42px 23px 28px;min-height:0;gap:8px}.hero h2{font-size:clamp(43px,12vw,62px)}.hero p{font-size:15px}.hero-art{min-height:220px}.hero-orb{width:210px}.hero-mini-palate{width:118px;height:162px;padding:16px 12px}.hero-mini-row i{width:6px;height:6px}.hero-tag{left:0;bottom:0;font-size:7px}.vision-band{grid-template-columns:1fr;padding:45px 23px;gap:10px}.vision-copy h2{font-size:36px}.vision-art{min-height:240px}.vision-plate{width:145px;height:205px;padding:17px}.vision-caption{left:0}.feature-title{font-size:32px;padding:34px 22px 15px}.module-cards{grid-template-columns:1fr;padding:0 18px 28px;gap:10px}.module-card{min-height:225px}.module-card .card-visual{height:82px;min-height:82px}.pagehead{padding:0 20px}.section-label{padding-left:20px}.card{padding:15px}#dashboard>.notice,#dashboard>.grid{margin-left:20px!important;margin-right:20px!important}aside{justify-content:flex-start}.navbtn{font-size:10px;padding:10px}}
 
+
+/* Final reference alignment: clean white masthead, pale editorial hero, black vision panel */
+header{background:#fbfbfa!important;color:#11191b!important;min-height:66px;padding:12px clamp(18px,4.5vw,78px)!important;border-bottom:1px solid #e5e7e8!important}
+.logo{background:transparent!important;color:#11191b!important;border-radius:0!important;width:28px;height:28px;padding:0!important;font-size:22px!important}
+.brand h1{font-size:13px!important;letter-spacing:.19em!important;text-transform:uppercase!important;font-weight:800!important;color:#101719!important}
+.brand p{color:#667176!important;font-size:9px!important;margin-top:3px!important}
+.status{background:#fff!important;color:#657178!important;border:1px solid #d9dfe1!important;font-size:8px!important;padding:6px 9px!important}
+aside{position:relative!important;top:auto!important;justify-content:center!important;background:#fbfbfa!important;border-bottom:1px solid #e3e6e7!important;padding:6px clamp(12px,3vw,48px)!important;min-height:39px!important}
+.navbtn{color:#29353a!important;font-size:9px!important;padding:8px 10px!important;border-radius:0!important;background:transparent!important}
+.navbtn.active{color:#101719!important;background:transparent!important;border-bottom:2px solid #11191b!important;font-weight:800!important}
+.hero{min-height:min(570px,64vh)!important;padding:clamp(40px,5.5vw,92px) clamp(24px,5.8vw,100px)!important;grid-template-columns:1.12fr .88fr!important;background:#dbe2e5!important}
+.hero:before{background:linear-gradient(112deg,#e8edef 0%,#cbd6da 52%,#eeece7 100%)!important}
+.hero:after{border-color:#fff9!important;box-shadow:0 0 0 34px #ffffff38,0 0 0 76px #ffffff24!important;right:6%!important;top:-12%!important}
+.hero-kicker{color:#344b53!important}
+.hero h2{font-family:Inter,Arial,sans-serif!important;font-size:clamp(42px,5vw,72px)!important;line-height:.98!important;font-weight:400!important;letter-spacing:-.065em!important;color:#101719!important}
+.hero p{font-size:clamp(14px,1.15vw,16px)!important;line-height:1.65!important;color:#28383e!important}
+.hero .row button{background:#080d0f!important;color:#fff!important;border-radius:999px!important;padding:12px 18px!important;font-size:10px!important}
+.hero .row button.secondary{background:transparent!important;color:#18282d!important;border:1px solid #8d9da2!important}
+.hero-art{min-height:300px!important}
+.hero-orb{width:min(100%,350px)!important;border-color:#ffffffc7!important;background:radial-gradient(circle at 50% 45%,#ffffff9c,transparent 67%)!important;box-shadow:0 0 0 1px #ffffff42!important}
+.hero-mini-palate{width:clamp(125px,12vw,165px)!important;height:clamp(175px,18vw,225px)!important;background:linear-gradient(145deg,#f0d0c8,#c88f88 72%,#ad7773)!important;box-shadow:0 22px 48px #4c41402b!important}
+.hero-tag{left:0!important;bottom:3%!important;border-radius:999px!important;font-size:8px!important;padding:8px 12px!important}
+.vision-band{grid-template-columns:.9fr 1.1fr!important;min-height:410px!important;padding:clamp(42px,4vw,66px) clamp(24px,5.8vw,100px)!important}
+.vision-copy h2{font-size:clamp(30px,3vw,44px)!important;line-height:1.15!important;margin:22px 0!important}
+.vision-copy p{font-size:13px!important;line-height:1.8!important}
+.outline-light{border-radius:999px!important;min-width:0!important;padding:12px 17px!important;font-size:10px!important}
+.vision-art{min-height:290px!important}
+.vision-radar{width:min(65vw,410px)!important;box-shadow:0 0 0 28px #ffffff08,0 0 0 56px #ffffff04!important}
+.vision-plate{width:clamp(150px,15vw,205px)!important;height:clamp(210px,22vw,270px)!important}
+.feature-title{font-family:Inter,Arial,sans-serif!important;font-size:clamp(28px,2.5vw,40px)!important;letter-spacing:-.055em!important;font-weight:400!important;padding:32px 3vw 8px!important;background:#f7f7f6!important}
+.module-cards{background:#f7f7f6!important;padding:10px 2vw 30px!important;gap:9px!important}
+.module-card{min-height:275px!important;padding:20px 18px 16px!important;border-radius:4px!important}
+.module-card h3{font-size:clamp(16px,1.3vw,21px)!important}
+.module-card p{font-size:10px!important;line-height:1.65!important;max-width:26ch!important}
+.module-card .card-visual{min-height:95px!important}
+.section-label{padding:30px 3vw 12px!important}
+.pagehead{padding:0 3vw!important}
+#dashboard>.notice,#dashboard>.grid{margin-left:3vw!important;margin-right:3vw!important}
+#dashboard .card{border-radius:4px!important}
+@media(max-width:850px){
+ header{gap:10px}
+ aside{justify-content:flex-start!important;overflow-x:auto!important}
+ .hero{grid-template-columns:1fr!important;min-height:0!important}
+ .hero-art{min-height:230px!important}
+ .vision-band{grid-template-columns:1fr!important}
+ .vision-art{min-height:270px!important}
+ .module-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:520px){
+ header{padding:12px 16px!important}
+ .brand h1{font-size:11px!important;letter-spacing:.13em!important}
+ .brand p{font-size:8px!important}
+ .status{font-size:7px!important}
+ .hero{padding:40px 22px 28px!important}
+ .hero h2{font-size:clamp(40px,12vw,58px)!important}
+ .hero-art{min-height:200px!important}
+ .hero-tag{left:0!important}
+ .vision-band{padding:42px 22px!important}
+ .module-cards{grid-template-columns:1fr!important;padding:10px 16px 25px!important}
+ .module-card{min-height:225px!important}
+ .feature-title{padding:28px 18px 8px!important}
+ .pagehead{padding:0 18px!important}
+ #dashboard>.notice,#dashboard>.grid{margin-left:18px!important;margin-right:18px!important}
+}
+
 </style></head><body>
 <header><div class="brand"><div class="logo">⌁</div><div><h1>Wireless EPG-CP</h1><p>Smart Palate & Speech Analysis System · Research prototype</p></div></div><span class="status">● DEMO MODE · No clinical device connected</span></header>
 <div class="layout"><aside class="no-print" aria-label="Navigation"><button class="navbtn active" data-page="dashboard">▦ &nbsp; Dashboard</button><button class="navbtn" data-page="participants">♙ &nbsp; Participants</button><button class="navbtn" data-page="palate">◉ &nbsp; Digital palate</button><button class="navbtn" data-page="contact">⌁ &nbsp; Contact visualization</button><button class="navbtn" data-page="sensor">⌁ &nbsp; Sensor connection</button><button class="navbtn" data-page="speech">♫ &nbsp; Speech & video</button><button class="navbtn" data-page="reports">▤ &nbsp; Reports</button></aside><main>
