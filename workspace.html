@@ -976,6 +976,14 @@ body.workspace-page{background:#f3f6f8;color:#182b45}
 }
 @media print{#contact .contact-toolbar,#contact .contact-action-buttons{display:none!important}#contact .contact-dashboard-grid,#contact .contact-lower-grid{display:block!important}#contact .card{break-inside:avoid;margin-bottom:12px}}
 
+
+/* Fit the crisp vector palate art to the map panel */
+#contact .palate-photo-stage{aspect-ratio:1.43!important;background:linear-gradient(140deg,#e8f3fa,#f9fbfd 50%,#dceaf3)!important}
+#contact .palate-photo{object-fit:contain!important;padding:0!important}
+#contact .electrode.contact-electrode{width:clamp(17px,1.45vw,26px)!important;height:clamp(17px,1.45vw,26px)!important}
+#contact .electrode.contact-electrode span{font-size:clamp(6px,.66vw,9px)!important}
+@media(max-width:620px){#contact .palate-photo-stage{aspect-ratio:1.35!important}#contact .electrode.contact-electrode{width:19px!important;height:19px!important}#contact .electrode.contact-electrode span{font-size:7px!important}}
+
 </style></head>
 <body class="workspace-page">
 
@@ -1013,7 +1021,7 @@ body.workspace-page{background:#f3f6f8;color:#182b45}
             <div class="diagram-chip"><span class="signal-dot"></span>INTERACTIVE DEMO</div>
           </div>
           <div class="palate-photo-stage">
-            <img class="palate-photo" src="assets/hero-palate.webp" alt="Illustrative palatal appliance with electrode contacts" loading="lazy">
+            <img class="palate-photo" src="assets/contact-palate.svg" alt="Illustrative upper dental arch with palatal electrode array" loading="lazy">
             <div id="palateDiagram" class="palate electrode-overlay" aria-label="Interactive schematic electrode array"></div>
           </div>
           <div class="palate-caption"><span>ANTERIOR</span><span>DEFAULT ELECTRODE POSITIONS</span><span>POSTERIOR</span></div>
