@@ -723,6 +723,44 @@ body>header#top{display:none}
  .research-feature-art{height:190px!important}
 }
 
+
+/* Card-art refresh: clean transparent illustrations replace badly cropped raster tiles */
+#technology .showcase-card{height:244px!important;isolation:isolate!important;overflow:hidden!important;border-radius:10px!important;border:1px solid #243a3e!important;box-shadow:0 12px 30px #102d3712!important;background:#111b1e!important}
+#technology .showcase-card:before{z-index:-2!important}
+#technology .showcase-card:after{z-index:0!important;pointer-events:none!important;background:linear-gradient(120deg,#071014e8 0%,#071014a8 47%,#07101410 100%)!important}
+#technology .showcase-title{position:relative!important;z-index:3!important;max-width:58%!important;padding-right:0!important}
+#technology .showcase-title>span{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:32px!important;height:23px!important;border:1px solid #ffffff75!important;border-radius:30px!important;padding:0 8px!important;font-size:9px!important;letter-spacing:.12em!important;background:#06111650!important;color:#f5ffff!important}
+#technology .showcase-title h3{font-size:clamp(17px,1.4vw,21px)!important;font-weight:700!important;line-height:1.16!important;letter-spacing:-.04em!important;margin:14px 0 8px!important;color:#fff!important}
+#technology .showcase-title p{font-size:11px!important;line-height:1.55!important;max-width:185px!important;margin:0!important;color:#e2ecee!important;text-wrap:pretty!important}
+#technology .showcase-image{position:absolute!important;z-index:1!important;right:2%!important;bottom:1%!important;width:61%!important;height:77%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center bottom!important;opacity:1!important;border:0!important;border-radius:0!important;background:transparent!important;mix-blend-mode:normal!important;mask-image:none!important;-webkit-mask-image:none!important;filter:drop-shadow(0 13px 12px #0005)!important;transition:transform .28s ease,filter .28s ease!important;pointer-events:none!important}
+#technology .showcase-card:hover .showcase-image{transform:translateY(-4px) scale(1.035)!important;filter:drop-shadow(0 18px 16px #0006)!important}
+#technology .palate-card .showcase-image{width:62%!important;height:82%!important;right:0!important;bottom:0!important}
+#technology .mapping-card .showcase-image{width:61%!important;height:80%!important;right:0!important;bottom:0!important}
+#technology .sensor-card .showcase-image{width:59%!important;height:72%!important;right:1%!important;bottom:0!important}
+#technology .reports-card .showcase-image{width:57%!important;height:82%!important;right:1%!important;bottom:-1%!important}
+#technology .circle-arrow{z-index:4!important;position:absolute!important;left:20px!important;bottom:17px!important;width:32px!important;height:32px!important;display:grid!important;place-items:center!important;border:1px solid #ffffffb0!important;border-radius:50%!important;background:#09171b3b!important;color:#fff!important;font-size:16px!important;transition:background .2s,transform .2s!important}
+#technology .showcase-card:hover .circle-arrow{background:#168b99!important;transform:translate(2px,-2px)!important}
+@media(max-width:1000px){
+ #technology .showcase-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+ #technology .showcase-card{height:230px!important}
+ #technology .showcase-title{max-width:58%!important}
+ #technology .showcase-image{width:62%!important;height:76%!important}
+ #technology .palate-card .showcase-image{width:64%!important;height:80%!important}
+ #technology .reports-card .showcase-image{width:58%!important;height:80%!important}
+}
+@media(max-width:600px){
+ #technology .showcase-grid{grid-template-columns:1fr!important;gap:12px!important}
+ #technology .showcase-card{height:218px!important;padding:18px!important}
+ #technology .showcase-title{max-width:62%!important}
+ #technology .showcase-title h3{font-size:19px!important}
+ #technology .showcase-title p{max-width:170px!important;font-size:10px!important}
+ #technology .showcase-image{width:58%!important;height:75%!important;right:0!important}
+ #technology .palate-card .showcase-image{width:62%!important;height:80%!important}
+ #technology .mapping-card .showcase-image{width:62%!important;height:80%!important}
+ #technology .sensor-card .showcase-image{width:60%!important;height:74%!important}
+ #technology .reports-card .showcase-image{width:58%!important;height:80%!important}
+}
+
 </style></head><body>
 
 <nav id="top" class="site-nav" aria-label="Main website navigation">
@@ -737,10 +775,10 @@ body>header#top{display:none}
 <section id="technology" class="tool-showcase">
   <div class="section-heading"><div><p class="site-kicker">THE RESEARCH WORKSPACE</p><h2>Tools for careful discovery.</h2></div><a href="workspace.html" class="text-link">View all tools ↗</a></div>
   <div class="showcase-grid">
-    <a class="showcase-card palate-card" href="workspace.html#palate"><div class="showcase-title"><span>01</span><h3>Digital palate</h3><p>Configure electrode positions and record palate observations.</p></div><img class="showcase-image" src="assets/card-palate.webp" alt="Digital palate with electrode contacts" loading="lazy"><span class="circle-arrow">↗</span></a>
-    <a class="showcase-card mapping-card" href="workspace.html#contact"><div class="showcase-title"><span>02</span><h3>Contact mapping</h3><p>Explore colour-coded contact patterns and event sequences.</p></div><img class="showcase-image" src="assets/card-contact.webp" alt="Colour-coded tongue–palate contact mapping model" loading="lazy"><span class="circle-arrow">↗</span></a>
-    <a class="showcase-card sensor-card" href="workspace.html#sensor"><div class="showcase-title"><span>03</span><h3>Sensor lab</h3><p>Review imported streams, timestamps and CSV data.</p></div><img class="showcase-image" src="assets/card-sensor.webp" alt="Compact wireless sensor research unit" loading="lazy"><span class="circle-arrow">↗</span></a>
-    <a class="showcase-card reports-card" href="workspace.html#reports"><div class="showcase-title"><span>04</span><h3>Research reports</h3><p>Bring session notes and measurements into a clear report.</p></div><img class="showcase-image" src="assets/card-report.webp" alt="Research report with charts and palate visualisation" loading="lazy"><span class="circle-arrow">↗</span></a>
+    <a class="showcase-card palate-card" href="workspace.html#palate"><div class="showcase-title"><span>01</span><h3>Digital palate</h3><p>Configure electrode positions and record palate observations.</p></div><img class="showcase-image" src="assets/card-palate.svg" alt="Illustrated digital palate with electrode contacts" loading="lazy"><span class="circle-arrow">↗</span></a>
+    <a class="showcase-card mapping-card" href="workspace.html#contact"><div class="showcase-title"><span>02</span><h3>Contact mapping</h3><p>Explore colour-coded contact patterns and event sequences.</p></div><img class="showcase-image" src="assets/card-contact.svg" alt="Illustrated colour-coded tongue–palate contact mapping model" loading="lazy"><span class="circle-arrow">↗</span></a>
+    <a class="showcase-card sensor-card" href="workspace.html#sensor"><div class="showcase-title"><span>03</span><h3>Sensor lab</h3><p>Review imported streams, timestamps and CSV data.</p></div><img class="showcase-image" src="assets/card-sensor.svg" alt="Illustrated wireless sensor research unit" loading="lazy"><span class="circle-arrow">↗</span></a>
+    <a class="showcase-card reports-card" href="workspace.html#reports"><div class="showcase-title"><span>04</span><h3>Research reports</h3><p>Bring session notes and measurements into a clear report.</p></div><img class="showcase-image" src="assets/card-report.svg" alt="Illustrated research report with charts" loading="lazy"><span class="circle-arrow">↗</span></a>
   </div>
 </section>
 <section id="research" class="vision-section">
