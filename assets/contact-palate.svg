@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 448" fill="none">
+<defs>
+ <linearGradient id="bg" x1="28" y1="8" x2="608" y2="438" gradientUnits="userSpaceOnUse"><stop stop-color="#EAF4FB"/><stop offset=".48" stop-color="#F8FBFD"/><stop offset="1" stop-color="#D8E6F1"/></linearGradient>
+ <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 220 -290 0 320 204)" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".95"/><stop offset="1" stop-color="#BAD1E0" stop-opacity="0"/></radialGradient>
+ <linearGradient id="tray" x1="102" y1="35" x2="534" y2="404" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".94"/><stop offset=".25" stop-color="#CFE1EA" stop-opacity=".65"/><stop offset=".55" stop-color="#FFFFFF" stop-opacity=".83"/><stop offset="1" stop-color="#A9C4D5" stop-opacity=".72"/></linearGradient>
+ <linearGradient id="palate" x1="180" y1="58" x2="453" y2="376" gradientUnits="userSpaceOnUse"><stop stop-color="#F5C8C2"/><stop offset=".45" stop-color="#D98F8E"/><stop offset="1" stop-color="#B96770"/></linearGradient>
+ <linearGradient id="gumShade" x1="212" y1="75" x2="420" y2="350" gradientUnits="userSpaceOnUse"><stop stop-color="#FADBD3"/><stop offset=".48" stop-color="#D58583"/><stop offset="1" stop-color="#C77678"/></linearGradient>
+ <linearGradient id="tooth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset=".6" stop-color="#F9F0E5"/><stop offset="1" stop-color="#D8C9BF"/></linearGradient>
+ <linearGradient id="toothShade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF8"/><stop offset="1" stop-color="#DCCDC3"/></linearGradient>
+ <filter id="shadow" x="40" y="10" width="570" height="438" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="11"/></filter>
+ <filter id="shine" x="70" y="10" width="500" height="430" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+<rect width="640" height="448" rx="18" fill="url(#bg)"/>
+<rect width="640" height="448" rx="18" fill="url(#glow)"/>
+<ellipse cx="320" cy="390" rx="214" ry="27" fill="#536F84" opacity=".2" filter="url(#shadow)"/>
+<!-- transparent appliance rim -->
+<path d="M109 100C139 44 218 24 320 26c102-2 181 18 211 74 27 51 17 143-13 211-28 62-87 103-198 116-111-13-170-54-198-116-30-68-40-160-13-211Z" fill="url(#tray)" stroke="#FFFFFF" stroke-width="10"/>
+<path d="M116 100C147 49 221 32 320 33c99-1 173 16 204 67 24 43 14 137-15 204-28 60-86 95-189 108-103-13-161-48-189-108-29-67-39-161-15-204Z" stroke="#98B9CC" stroke-width="2.5" opacity=".75"/>
+<path d="M121 102C151 55 223 40 320 41c97-1 169 14 199 61 21 39 12 128-16 193-26 57-83 90-183 103-100-13-157-46-183-103-28-65-37-154-16-193Z" fill="url(#palate)" stroke="#D48C8C" stroke-width="3"/>
+<path d="M158 113C182 78 240 61 320 62c80-1 138 16 162 51 14 32 8 107-16 159-24 52-65 82-146 96-81-14-122-44-146-96-24-52-30-127-16-159Z" fill="url(#gumShade)" opacity=".95"/>
+<path d="M195 121C222 98 264 85 320 85c56 0 98 13 125 36" stroke="#F6D4CD" stroke-width="5" stroke-linecap="round" opacity=".82"/>
+<!-- enamel teeth along the palatal arch -->
+<g fill="url(#tooth)" stroke="#D8C5BB" stroke-width="2.3">
+ <ellipse cx="185" cy="87" rx="22" ry="30" transform="rotate(-30 185 87)"/>
+ <ellipse cx="226" cy="65" rx="21" ry="27" transform="rotate(-20 226 65)"/>
+ <ellipse cx="271" cy="54" rx="20" ry="25" transform="rotate(-8 271 54)"/>
+ <ellipse cx="320" cy="52" rx="20" ry="25"/>
+ <ellipse cx="369" cy="54" rx="20" ry="25" transform="rotate(8 369 54)"/>
+ <ellipse cx="414" cy="65" rx="21" ry="27" transform="rotate(20 414 65)"/>
+ <ellipse cx="455" cy="87" rx="22" ry="30" transform="rotate(30 455 87)"/>
+ <ellipse cx="148" cy="127" rx="22" ry="29" transform="rotate(-20 148 127)"/>
+ <ellipse cx="132" cy="174" rx="22" ry="28" transform="rotate(-13 132 174)"/>
+ <ellipse cx="135" cy="222" rx="22" ry="27" transform="rotate(-7 135 222)"/>
+ <ellipse cx="151" cy="270" rx="21" ry="26" transform="rotate(6 151 270)"/>
+ <ellipse cx="181" cy="313" rx="20" ry="24" transform="rotate(16 181 313)"/>
+ <ellipse cx="217" cy="345" rx="19" ry="23" transform="rotate(23 217 345)"/>
+ <ellipse cx="492" cy="127" rx="22" ry="29" transform="rotate(20 492 127)"/>
+ <ellipse cx="508" cy="174" rx="22" ry="28" transform="rotate(13 508 174)"/>
+ <ellipse cx="505" cy="222" rx="22" ry="27" transform="rotate(7 505 222)"/>
+ <ellipse cx="489" cy="270" rx="21" ry="26" transform="rotate(-6 489 270)"/>
+ <ellipse cx="459" cy="313" rx="20" ry="24" transform="rotate(-16 459 313)"/>
+ <ellipse cx="423" cy="345" rx="19" ry="23" transform="rotate(-23 423 345)"/>
+</g>
+<g stroke="#FFF" stroke-width="2.5" opacity=".75" stroke-linecap="round">
+ <path d="M169 77c3-9 9-17 17-21M212 53c5-8 12-13 20-15M262 43c4-6 10-9 16-10M351 34c8 2 13 6 18 12M401 49c9 3 15 10 18 18M130 149c2-7 5-12 10-15M117 193c1-7 4-13 8-16M118 239c2-7 5-12 9-15M140 284c2-6 5-10 9-12M475 149c-2-7-5-12-10-15M488 193c-1-7-4-13-8-16M488 239c-2-7-5-12-9-15M466 284c-2-6-5-10-9-12"/>
+</g>
+<!-- palatal rugae / subtle midline folds -->
+<g stroke="#F4C2BC" stroke-width="3" stroke-linecap="round" opacity=".85">
+ <path d="M226 135c22-15 46-22 72-22M215 155c28-17 54-24 83-24M211 176c29-16 57-23 89-23M215 198c28-15 54-22 86-22M220 221c28-14 54-19 83-19M230 244c24-12 48-17 72-17"/>
+ <path d="M414 135c-22-15-46-22-72-22M425 155c-28-17-54-24-83-24M429 176c-29-16-57-23-89-23M425 198c-28-15-54-22-86-22M420 221c-28-14-54-19-83-19M410 244c-24-12-48-17-72-17"/>
+</g>
+<path d="M320 106c-2 36-1 75 0 113 1 44-1 91-7 132" stroke="#AA6269" stroke-width="2" opacity=".42"/>
+<!-- glass specular highlights -->
+<path d="M113 105C144 44 223 19 320 21c94-1 174 20 207 78" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+<path d="M95 161c4-33 15-57 30-76M545 157c-3-27-13-50-28-68" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity=".48"/>
+<path d="M166 371c40 34 87 50 154 56 67-6 114-22 154-56" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity=".57"/>
+</svg>
