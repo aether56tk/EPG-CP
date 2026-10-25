@@ -828,6 +828,37 @@ body>header#top{display:none}
  #technology .showcase-card:hover{transform:none!important}
 }
 
+
+/* Verified card geometry fix: give text and art separate non-overlapping zones */
+#technology .showcase-title{width:45%!important;max-width:45%!important;min-width:0!important;position:relative!important;z-index:4!important}
+#technology .showcase-title h3{max-width:100%!important;overflow-wrap:normal!important;text-wrap:pretty!important}
+#technology .showcase-title p{width:100%!important;max-width:100%!important;overflow-wrap:break-word!important}
+#technology .showcase-image{left:48%!important;right:auto!important;top:5%!important;bottom:0!important;width:52%!important;height:90%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center bottom!important;transform-origin:center bottom!important}
+#technology .showcase-card.palate-card .showcase-image{left:48%!important;width:52%!important;height:91%!important}
+#technology .showcase-card.mapping-card .showcase-image{left:48%!important;width:52%!important;height:90%!important}
+#technology .showcase-card.sensor-card .showcase-image{left:47%!important;width:53%!important;height:88%!important}
+#technology .showcase-card.reports-card .showcase-image{left:49%!important;width:50%!important;height:91%!important}
+#technology .showcase-card:hover .showcase-image{transform:translateY(-3px) scale(1.015)!important}
+@media(max-width:1180px){
+ #technology .showcase-title{width:47%!important;max-width:47%!important}
+ #technology .showcase-image{left:49%!important;width:51%!important;height:90%!important}
+ #technology .showcase-card.palate-card .showcase-image{left:48%!important;width:52%!important;height:91%!important}
+ #technology .showcase-card.mapping-card .showcase-image{left:48%!important;width:52%!important;height:90%!important}
+ #technology .showcase-card.sensor-card .showcase-image{left:47%!important;width:53%!important;height:88%!important}
+ #technology .showcase-card.reports-card .showcase-image{left:49%!important;width:50%!important;height:91%!important}
+}
+@media(max-width:620px){
+ #technology .showcase-card{height:216px!important}
+ #technology .showcase-title{width:45%!important;max-width:45%!important}
+ #technology .showcase-title h3{font-size:18px!important;line-height:1.15!important}
+ #technology .showcase-title p{font-size:10px!important;line-height:1.55!important}
+ #technology .showcase-image{left:48%!important;width:52%!important;height:88%!important;top:6%!important}
+ #technology .showcase-card.palate-card .showcase-image{left:48%!important;width:52%!important;height:90%!important}
+ #technology .showcase-card.mapping-card .showcase-image{left:48%!important;width:52%!important;height:90%!important}
+ #technology .showcase-card.sensor-card .showcase-image{left:47%!important;width:53%!important;height:87%!important}
+ #technology .showcase-card.reports-card .showcase-image{left:49%!important;width:50%!important;height:90%!important}
+}
+
 </style></head><body>
 
 <nav id="top" class="site-nav" aria-label="Main website navigation">
