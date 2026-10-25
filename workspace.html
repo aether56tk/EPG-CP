@@ -825,6 +825,157 @@ body.workspace-page{background:#f3f6f8;color:#182b45}
  #contact .legend{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
 
+
+/* Contact dashboard visual reconstruction */
+#contact.contact-page{max-width:1500px;margin:0 auto;padding-bottom:28px}
+#contact .contact-pagehead{align-items:center!important;gap:18px!important;margin-bottom:18px!important}
+#contact .contact-title{flex:1 1 370px;min-width:260px}
+#contact .contact-title .eyebrow{color:#078d9b!important;letter-spacing:.15em!important;font-size:10px!important}
+#contact .contact-title h2{font-size:clamp(28px,3vw,42px)!important;line-height:1.1!important;letter-spacing:-.055em!important;margin:7px 0 9px!important;color:#0e223b!important}
+#contact .contact-title p{font-size:13px!important;max-width:760px!important;line-height:1.55!important;color:#506680!important}
+#contact .contact-toolbar{display:flex;align-items:stretch;gap:12px;flex:0 1 auto}
+#contact .contact-controlbox{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e0e9ef;border-radius:13px;padding:10px;box-shadow:0 5px 18px #23405b08}
+#contact .contact-controlbox button{min-height:44px!important;padding:10px 14px!important;border-radius:9px!important;white-space:nowrap!important;font-size:12px!important;font-weight:750!important}
+#contact .contact-controlbox .contact-play{background:#09bcb9!important;color:white!important;box-shadow:0 4px 10px #09bcb929!important}
+#contact .contact-controlbox .secondary{background:#e8f4f6!important;color:#114057!important}
+#contact .contact-controlbox .ghost{background:#f3f6f9!important;color:#314b63!important}
+#contact .contact-clock{min-width:120px;display:flex;flex-direction:column;justify-content:center;gap:9px;background:#fff;border:1px solid #e0e9ef;border-radius:13px;padding:12px 16px;box-shadow:0 5px 18px #23405b08}
+#contact .contact-clock span{font-size:11px;color:#647c91}
+#contact .contact-clock strong{font-size:16px;letter-spacing:.02em;color:#132a42;font-variant-numeric:tabular-nums}
+#contact .contact-notice{display:flex;align-items:center;gap:9px;border:1px solid #f2dda5!important;border-radius:9px!important;background:linear-gradient(95deg,#fff8e6,#fffdf6)!important;padding:11px 14px!important;color:#80561b!important;font-size:10px!important;line-height:1.55!important}
+#contact .contact-notice strong{font-size:9px;letter-spacing:.08em;white-space:nowrap;color:#8a5a14}
+#contact .contact-dashboard-grid{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(325px,.94fr);gap:16px;margin-top:15px;align-items:stretch}
+#contact .contact-dashboard-grid>.card{min-width:0;border:1px solid #dce7ef!important;border-radius:15px!important;background:#fff!important;box-shadow:0 8px 26px #18375408!important;padding:18px!important}
+#contact .contact-map-card{overflow:hidden;background:linear-gradient(145deg,#fff,#f8fbfd)!important}
+#contact .contact-map-layout{display:grid;grid-template-columns:minmax(0,1fr) 218px;gap:18px;align-items:stretch}
+#contact .contact-map-main{min-width:0}
+#contact .diagram-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin:0 0 10px!important;padding:0 0 12px!important;border-bottom:1px solid #e8eef2}
+#contact .diagram-eyebrow{font-size:8px!important;letter-spacing:.16em!important;font-weight:850!important;color:#168899!important}
+#contact .diagram-head h3{font-size:17px!important;font-weight:800!important;line-height:1.2!important;color:#142b42!important;margin:5px 0 5px!important}
+#contact .diagram-head p{font-size:10px!important;color:#71879a!important;line-height:1.5!important;margin:0!important}
+#contact .diagram-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #dcecf0!important;background:#f2fafb!important;color:#267c89!important;border-radius:20px!important;padding:7px 9px!important;font-size:7px!important;letter-spacing:.08em!important;white-space:nowrap}
+#contact .signal-dot{width:6px;height:6px;background:#18b9a5;border-radius:50%;box-shadow:0 0 0 4px #18b9a51c}
+#contact .palate-photo-stage{width:100%;position:relative;aspect-ratio:1.17;overflow:hidden;border-radius:10px;background:linear-gradient(135deg,#d9e9f5,#f6f9fc 52%,#d6e4f0);isolation:isolate}
+#contact .palate-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;display:block;user-select:none;pointer-events:none}
+#contact .palate.electrode-overlay{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-height:none!important;display:block!important;aspect-ratio:auto!important;clip-path:none!important;overflow:visible!important;padding:0!important;margin:0!important;gap:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;filter:none!important;isolation:isolate}
+#contact .palate.electrode-overlay:before,#contact .palate.electrode-overlay:after{display:none!important}
+#contact .electrode.contact-electrode{position:absolute!important;left:50%;top:50%;transform:translate(-50%,-50%)!important;width:clamp(19px,1.65vw,29px)!important;height:clamp(19px,1.65vw,29px)!important;min-width:0!important;max-width:none!important;padding:0!important;display:grid!important;place-items:center!important;border:2px solid white!important;border-radius:50%!important;background:#1679df!important;color:#fff!important;box-shadow:0 0 0 1px #0b5b9b,0 2px 5px #11344e35!important;cursor:pointer!important;z-index:3!important;transition:transform .14s ease,box-shadow .14s ease!important}
+#contact .electrode.contact-electrode span{font-size:clamp(7px,.75vw,10px)!important;font-weight:800!important;line-height:1!important;opacity:1!important;color:white!important;text-shadow:0 1px 2px #103a5e55!important}
+#contact .electrode.contact-electrode:hover{transform:translate(-50%,-50%) scale(1.14)!important;z-index:6!important;box-shadow:0 0 0 3px #fff,0 0 0 5px #0883c8,0 4px 12px #0e3b5b42!important}
+#contact .electrode.contact-electrode:focus-visible{outline:3px solid #0e879f!important;outline-offset:3px!important}
+#contact .electrode.contact-electrode.s0{background:#167de0!important}
+#contact .electrode.contact-electrode.s1{background:#23ca7b!important;box-shadow:0 0 0 1px #0c9c63,0 0 0 5px #27d48a35,0 0 13px #21ce8c80!important}
+#contact .electrode.contact-electrode.s2{background:#ffc928!important;color:#1c2b3d!important;box-shadow:0 0 0 1px #d19a0a,0 0 0 5px #ffd33a45,0 0 14px #ffc92885!important}
+#contact .electrode.contact-electrode.s2 span{color:#24303a!important;text-shadow:none!important}
+#contact .electrode.contact-electrode.s3{background:#f13737!important;box-shadow:0 0 0 1px #cb1e2a,0 0 0 5px #ff43434c,0 0 17px #fa3838a3!important}
+#contact .palate-caption{display:flex;justify-content:space-between;gap:6px;padding:10px 3px 0;color:#8294a0;font-size:7px;letter-spacing:.12em;font-weight:850}
+#contact .contact-key{min-width:0;padding:5px 0 0 16px;border-left:1px solid #e6eef2;display:flex;flex-direction:column}
+#contact .key-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 0 13px;border-bottom:1px solid #e8eff3;margin-bottom:11px}
+#contact .key-heading>span:first-child{font-size:15px;font-weight:800;color:#122a40}
+#contact .key-mode{font-size:7px;font-weight:850;letter-spacing:.1em;color:#9b751b;background:#fff5d8;border-radius:5px;padding:5px 6px}
+#contact .key-row{display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #f0f4f6}
+#contact .state-swatch{width:32px;height:32px;display:block;border-radius:10px;position:relative;background:#e5f2fe}
+#contact .state-swatch:after{content:"";position:absolute;inset:7px;border-radius:50%;background:#167de0;box-shadow:0 0 0 1px #ffffff}
+#contact .state-swatch.s1{background:#e5fbef}#contact .state-swatch.s1:after{background:#23ca7b}
+#contact .state-swatch.s2{background:#fff8dc}#contact .state-swatch.s2:after{background:#ffc928}
+#contact .state-swatch.s3{background:#ffebeb}#contact .state-swatch.s3:after{background:#f13737}
+#contact .key-row strong{display:block;font-size:11px;color:#1c344a;line-height:1.25}
+#contact .key-row small{display:block;margin-top:3px;font-size:9px;color:#74899a;line-height:1.3}
+#contact .key-row kbd{display:grid;place-items:center;width:20px;height:21px;border:1px solid #dce7ed;border-radius:5px;color:#8a9ba6;font-size:9px;font-weight:800;background:#f9fbfc}
+#contact .key-separator{border-top:1px solid #e8eff3;margin:12px 0}
+#contact .quick-info-title{font-size:13px;font-weight:800;color:#173047}
+#contact .quick-info-copy{font-size:10px;line-height:1.5;color:#71879a;margin:7px 0 13px}
+#contact .quick-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}
+#contact .quick-metrics>div{padding:10px 9px;border-radius:9px;background:#eef9fc;border:1px solid #e3f0f4;min-width:0}
+#contact .quick-metrics>div+div{background:#ebfaf5;border-color:#def4eb}
+#contact .quick-metrics strong{display:block;font-size:21px;line-height:1.15;color:#0b899f;font-variant-numeric:tabular-nums}
+#contact .quick-metrics>div+div strong{color:#0d9f78}
+#contact .quick-metrics strong small{font-size:10px}
+#contact .quick-metrics span{display:block;font-size:8px;color:#617b8b;margin-top:4px;white-space:nowrap}
+#contact .map-footer{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:13px;padding-top:11px;border-top:1px solid #e8eff2;font-size:8px;color:#8798a4}
+#contact .map-footer span:first-child{display:inline-flex;align-items:center;gap:6px}
+#contact .map-footer i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#2cc5a1;box-shadow:0 0 0 3px #2cc5a11a}
+#contact .contact-session-card{display:flex;flex-direction:column;gap:0}
+#contact .session-card-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-bottom:11px;border-bottom:1px solid #e9eff3}
+#contact .session-card-heading h3{margin:0!important;font-size:16px!important;font-weight:800!important;color:#132b43!important}
+#contact .session-status{display:inline-flex;align-items:center;gap:5px;font-size:8px;color:#19876d;background:#eaf9f3;border-radius:20px;padding:6px 8px;white-space:nowrap}
+#contact .session-status i{display:inline-block;width:5px;height:5px;border-radius:50%;background:#20bd8b}
+#contact .session-stat-list{display:grid;gap:2px;padding:8px 0}
+#contact .session-stat-list>div{display:grid;grid-template-columns:23px minmax(0,1fr) auto;align-items:center;gap:7px;min-height:30px;color:#61778b;font-size:11px}
+#contact .stat-icon{font-size:15px;color:#167c98;text-align:center}
+#contact .session-stat-list strong{font-size:12px;color:#102942;font-variant-numeric:tabular-nums}
+#contact .session-divider{border-top:1px solid #e7eef2;margin:6px 0 12px}
+#contact .contact-session-card .field{gap:6px;margin-bottom:12px}
+#contact .contact-session-card .field label{font-size:11px;color:#334f65;font-weight:750}
+#contact .contact-session-card .field select,#contact .contact-session-card .field textarea{border:1px solid #d4e1e9;border-radius:9px;background:#fbfdfe;padding:10px 12px;font-size:11px;color:#203b53;box-shadow:inset 0 1px 2px #18375404}
+#contact .contact-session-card .field textarea{min-height:72px;resize:vertical;line-height:1.45}
+#contact .contact-action-buttons{display:grid;gap:8px;margin-top:auto;padding-top:2px}
+#contact .contact-action-buttons button{width:100%;min-height:39px;border-radius:9px!important;padding:10px 12px!important;font-size:11px!important;font-weight:800!important;display:flex;align-items:center;justify-content:center;gap:9px}
+#contact .contact-log-button{background:#05b9bd!important;color:#fff!important;box-shadow:0 4px 10px #05b9bd24!important}
+#contact .contact-export-button{background:#e4f4f6!important;color:#14506a!important}
+#contact .contact-lower-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.2fr) minmax(0,1.25fr);gap:15px;margin-top:15px;align-items:stretch}
+#contact .chart-card{min-width:0;padding:16px!important;border:1px solid #dce7ef!important;border-radius:13px!important;background:#fff!important;box-shadow:0 7px 22px #18375407!important;overflow:hidden}
+#contact .chart-card-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:9px}
+#contact .chart-card-heading h3{font-size:13px!important;margin:0 0 4px!important;font-weight:800!important;color:#17314a!important}
+#contact .chart-card-heading p{font-size:9px;color:#8697a4;margin:0;line-height:1.4}
+#contact .chart-unit{font-size:7px;font-weight:850;letter-spacing:.1em;border-radius:5px;background:#f0f6f9;color:#6e8796;padding:5px 6px;white-space:nowrap}
+#contact .contact-intensity-map svg,#contact .contact-activity-chart svg{display:block;width:100%;height:auto;max-height:208px}
+#contact .chart-legend{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:3px}
+#contact .chart-legend span{display:flex;align-items:center;gap:4px;font-size:8px;color:#7a8c98}
+#contact .chart-legend i{width:7px;height:7px;display:inline-block;border-radius:50%}
+#contact .chart-legend i.s0{background:#278ee5}#contact .chart-legend i.s1{background:#2ecb89}#contact .chart-legend i.s2{background:#f7c943}#contact .chart-legend i.s3{background:#ef5448}
+#contact .contact-event-log{min-height:135px}
+#contact .contact-event-log.empty{display:flex;align-items:center;justify-content:center;text-align:center;font-size:10px;line-height:1.6;color:#94a3b2;padding:16px}
+#contact .contact-event-table{width:100%;border-collapse:collapse;font-size:9px;color:#354e64;white-space:nowrap}
+#contact .contact-event-table th{background:#f4f8fa;color:#6c8292;font-size:8px;font-weight:800;text-align:left;padding:8px 6px;border-bottom:1px solid #e4edf2}
+#contact .contact-event-table td{padding:7px 6px;border-bottom:1px solid #ecf1f4}
+#contact .contact-event-table td:first-child{color:#8b9aa5}
+#contact .event-state{display:inline-block;min-width:62px;text-align:center;border-radius:30px;padding:4px 6px;font-size:8px;font-weight:750;background:#edf3f7;color:#526c7f}
+#contact .event-state.s1{background:#d9f8e8;color:#118052}
+#contact .event-state.s2{background:#fff1a8;color:#855b00}
+#contact .event-state.s3{background:#ffe1e1;color:#b72828}
+#contact .event-state.s0{background:#deefff;color:#155d9b}
+#contact .contact-event-log .tablewrap{overflow-x:auto}
+@media(max-width:1250px){
+ #contact .contact-pagehead{align-items:flex-start!important}
+ #contact .contact-toolbar{flex-wrap:wrap}
+ #contact .contact-controlbox{flex-wrap:wrap}
+ #contact .contact-dashboard-grid{grid-template-columns:minmax(0,1.45fr) minmax(300px,.9fr)}
+ #contact .contact-map-layout{grid-template-columns:minmax(0,1fr) 190px;gap:12px}
+ #contact .contact-key{padding-left:12px}
+ #contact .key-row{grid-template-columns:29px minmax(0,1fr) auto;gap:6px}
+ #contact .state-swatch{width:27px;height:27px}
+ #contact .contact-lower-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
+ #contact .event-log-card{grid-column:1/-1}
+}
+@media(max-width:900px){
+ #contact .contact-dashboard-grid{grid-template-columns:minmax(0,1fr)}
+ #contact .contact-map-layout{grid-template-columns:minmax(0,1fr) 220px}
+ #contact .contact-lower-grid{grid-template-columns:1fr 1fr}
+ #contact .event-log-card{grid-column:1/-1}
+ #contact .contact-toolbar{width:100%;justify-content:space-between}
+ #contact .contact-pagehead{display:flex!important}
+}
+@media(max-width:620px){
+ #contact .contact-toolbar{display:grid;grid-template-columns:1fr!important}
+ #contact .contact-controlbox{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:8px}
+ #contact .contact-controlbox button{justify-content:center!important}
+ #contact .contact-clock{flex-direction:row;justify-content:space-between;align-items:center;min-width:0}
+ #contact .contact-notice{align-items:flex-start!important}
+ #contact .contact-dashboard-grid>.card{padding:13px!important}
+ #contact .contact-map-layout{grid-template-columns:1fr!important}
+ #contact .contact-key{border-left:0;border-top:1px solid #e5edf1;padding:14px 0 0}
+ #contact .key-row{grid-template-columns:34px minmax(0,1fr) auto}
+ #contact .state-swatch{width:31px;height:31px}
+ #contact .quick-metrics{max-width:330px}
+ #contact .contact-lower-grid{grid-template-columns:1fr!important}
+ #contact .event-log-card{grid-column:auto}
+ #contact .contact-title{min-width:0}
+ #contact .contact-title h2{font-size:29px!important}
+ #contact .diagram-chip{display:none}
+}
+@media print{#contact .contact-toolbar,#contact .contact-action-buttons{display:none!important}#contact .contact-dashboard-grid,#contact .contact-lower-grid{display:block!important}#contact .card{break-inside:avoid;margin-bottom:12px}}
+
 </style></head>
 <body class="workspace-page">
 
@@ -834,19 +985,89 @@ body.workspace-page{background:#f3f6f8;color:#182b45}
 <section id="dashboard" class="page"><div class="hero"><div><div class="hero-kicker">Digital speech science · Research prototype</div><h2>Every contact<br>tells a story.</h2><p>A new way to explore palate geometry, tongue-contact patterns and speech data — built for careful research, one session at a time.</p><div class="row no-print" style="margin-top:23px"><button onclick="newSession()">Start a session ↗</button><button class="secondary" onclick="nav('palate')">Explore palate model</button></div></div><div class="hero-art"><div class="hero-photo-frame"><img class="hero-photo" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Electropalate-vertical.jpg" alt="Research electropalatography artificial palate with electrode contacts, archival reference image"><span class="hero-photo-credit">EPG RESEARCH REFERENCE · ROACH PETER · CC BY-SA 4.0</span></div><div class="hero-orb"><div class="hero-mini-palate"><div class="hero-mini-row"><i></i><i></i><i></i><i></i><i></i></div><div class="hero-mini-row"><i></i><i></i><i></i><i></i><i></i></div><div class="hero-mini-row"><i></i><i></i><i></i><i></i><i></i></div><div class="hero-mini-row"><i></i><i></i><i></i><i></i><i></i></div><div class="hero-mini-row"><i></i><i></i><i></i><i></i><i></i></div><div class="hero-mini-row"><i></i><i></i><i></i><i></i><i></i></div></div></div><div class="hero-tag">EPG CONTACT MAP · DEMO VISUAL</div></div></div><div class="feature-title">Explore the research workspace</div><div class="module-cards no-print"><button class="module-card" onclick="nav('palate')"><div><h3>Digital palate</h3><p>Build participant-specific palate configurations and document anatomical measurements.</p></div><div class="card-visual"><div class="visual-plate"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="arrow">↗</span></button><button class="module-card" onclick="nav('contact')"><div><h3>Contact mapping</h3><p>Explore a colour-coded electrode array with clear separation between simulated and recorded data.</p></div><div class="card-visual"><div class="visual-rings"><span>⌁</span></div></div><span class="arrow">↗</span></button><button class="module-card" onclick="nav('sensor')"><div><h3>Sensor lab</h3><p>Review imported sensor streams, timestamped values and CSV data exports.</p></div><div class="card-visual"><div class="visual-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="arrow">↗</span></button><button class="module-card" onclick="nav('reports')"><div><h3>Research reports</h3><p>Bring session notes, measurements and contact-event summaries into a printable report.</p></div><div class="card-visual"><div class="visual-report"></div></div><span class="arrow">↗</span></button></div><section class="vision-band"><div class="vision-copy"><span class="editorial-kicker">THE VISION</span><h2>Understanding speech,<br>one contact at a time.</h2><p>Wireless EPG-CP is a research workspace for exploring palate geometry, tongue–palate contact patterns, and linked speech observations. Built to make complex research workflows feel clear and approachable.</p><button class="outline-light" onclick="nav('palate')">Explore the digital palate <span>↗</span></button></div><div class="vision-art" aria-label="Illustrative digital palate contact map"><div class="vision-radar"></div><div class="vision-plate"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="vision-caption">ILLUSTRATIVE MODEL · NOT LIVE SENSOR DATA</span></div></section><section class="impact-strip" aria-label="Research workspace overview"><div class="impact-intro"><span>IMPACT</span><small>Built for research exploration</small></div><div class="impact-stat"><strong>4</strong><span>CORE WORKSPACE TOOLS</span></div><div class="impact-stat"><strong>32</strong><span>DEMO ELECTRODE POSITIONS</span></div><div class="impact-stat"><strong>∞</strong><span>QUESTIONS TO EXPLORE</span></div><div class="impact-note"><span>RESEARCH PROTOTYPE</span><small>Academic use · Not a medical device · No live sensor connected</small></div></section><div class="section-label">Workspace overview</div><div class="pagehead"><div><div class="eyebrow">Research workspace</div><h2>Project dashboard</h2><p>Manage anonymous research sessions, digital palate configurations and EPG-style contact demonstrations.</p></div><div class="row no-print"><button onclick="newParticipant()">+ New participant</button><button class="secondary" onclick="newSession()">+ New session</button></div></div><div class="notice">Research prototype only. Contact states are simulated until validated sensors are connected. Do not enter identifiable child data or use this software for clinical decisions.</div><div class="grid" style="margin-top:15px"><div class="card span-3 metric-card"><div class="muted">Participants</div><div id="metricParticipants" class="metric">0</div><span class="pill">Anonymous IDs</span></div><div class="card span-3 metric-card"><div class="muted">Research sessions</div><div id="metricSessions" class="metric">0</div><span class="pill gray">Local records</span></div><div class="card span-3 metric-card"><div class="muted">Electrode positions</div><div id="metricElectrodes" class="metric">32</div><span class="pill">Editable grid</span></div><div class="card span-3"><div class="muted">Hardware status</div><div class="metric" style="font-size:19px">Not connected</div><span class="pill warn">Demo mode</span></div><div class="card span-7"><h3>Recent sessions</h3><div id="recentSessions" class="empty">No sessions yet. Add an anonymous participant to begin.</div></div><div class="card span-5"><h3>System modules</h3><div class="stack"><div class="between">Digital palate model <span class="pill gray">File-ready</span></div><div class="between">Contact visualization <span class="pill">Interactive demo</span></div><div class="between">Wireless hardware <span class="pill warn">Not connected</span></div><div class="between">Reports <span class="pill">Local export</span></div></div></div></div></section>
 <section id="participants" class="page hidden"><div class="pagehead"><div><div class="eyebrow">Research records</div><h2>Participants</h2><p>Use anonymous IDs only. Do not store names or identifying health details.</p></div><button onclick="newParticipant()">+ New participant</button></div><div class="card"><div id="participantsTable" class="empty">No participant records.</div></div></section>
 <section id="palate" class="page hidden"><div class="pagehead"><div><div class="eyebrow">Geometry & configuration</div><h2>Digital palate model</h2><p>Select an STL/PLY scan file, record measurements and configure an illustrative electrode grid.</p></div></div><div class="grid"><div class="card span-7"><h3>3D scan file</h3><div class="field"><label>Choose STL or PLY</label><input id="scanFile" type="file" accept=".stl,.ply"></div><p class="muted" id="scanStatus">No file selected. This starter stores the filename only and does not render geometry.</p><div class="notice">A 3D viewer must be added for true mesh rendering. Use anonymized, authorized scans only.</div></div><div class="card span-5"><h3>Palate measurements (mm)</h3><div class="fields"><div class="field"><label>Width</label><input id="palateWidth" type="number" min="0" step=".1"></div><div class="field"><label>Length</label><input id="palateLength" type="number" min="0" step=".1"></div><div class="field"><label>Arch depth</label><input id="archDepth" type="number" min="0" step=".1"></div><div class="field"><label>Participant ID</label><select id="participantSelect"><option value="">Select participant</option></select></div></div><div class="row" style="margin-top:13px"><button onclick="savePalate()">Save configuration</button><button class="secondary" onclick="downloadPalate()">Export JSON</button></div><p class="muted" id="palateSaveStatus"></p></div><div class="card span-12"><div class="between"><h3>Electrode layout</h3><div class="row"><label class="small">Rows <select id="rowCount" onchange="makeGrid()"><option>3</option><option selected>4</option><option>5</option><option>6</option><option>7</option></select></label><label class="small">Columns <select id="colCount" onchange="makeGrid()"><option>4</option><option selected>8</option><option>6</option><option>10</option><option>12</option></select></label></div></div><p class="muted">Illustrative electrode positions only; not anatomically calibrated.</p><div id="electrodeConfig" class="row"></div></div></div></section>
-<section id="contact" class="page hidden"><div class="pagehead"><div><div class="eyebrow">Live-style demonstration</div><h2>EPG contact visualization</h2><p>Click electrode points to cycle contact states. The diagram is schematic and not anatomically calibrated.</p></div><div class="row no-print"><button onclick="playDemo()">▶ Play</button><button class="secondary" onclick="pauseDemo()">Ⅱ Pause</button><button class="ghost" onclick="resetContacts()">Reset</button><button class="ghost" onclick="clearLog()">Clear log</button></div></div><div class="notice">DEMO DATA — Contact states are simulated or manually selected; they are not physiological measurements and are not for diagnosis or treatment.</div><div class="grid" style="margin-top:15px"><div class="card span-8 contact-map-card">
-<div class="diagram-head"><div><div class="diagram-eyebrow">ELECTRODE ARRAY · SCHEMATIC</div><h3>Palatal contact map</h3><p>Choose any electrode to cycle through its contact state.</p></div><div class="diagram-chip"><span class="signal-dot"></span><span>INTERACTIVE DEMO</span></div></div>
-<div class="palateWrap"><div class="palate-stage"><div class="orientation-label"><span>ANTERIOR</span><span>POSTERIOR</span></div><div id="palateDiagram" class="palate" aria-label="Schematic electrode grid"></div><div class="palate-caption"><span>LEFT</span><span>32 · DEFAULT POSITIONS</span><span>RIGHT</span></div></div>
-<div class="legend-panel"><div class="legend-heading"><span>CONTACT STATE KEY</span><span class="legend-live">● DEMO</span></div><div class="legend">
-<div class="legend-item"><span class="dot state-dot s0"></span><span>No contact</span><small>0</small></div>
-<div class="legend-item"><span class="dot state-dot s1"></span><span>Light</span><small>1</small></div>
-<div class="legend-item"><span class="dot state-dot s2"></span><span>Moderate</span><small>2</small></div>
-<div class="legend-item"><span class="dot state-dot s3"></span><span>High</span><small>3</small></div>
-</div><p class="legend-guide">Select an electrode to cycle through the four states.</p>
-<div class="active-summary"><span class="summary-icon">◉</span><div><strong><span id="activeCount">0</span><small> active contacts</small></strong><span class="summary-sub">Contact load <b id="contactLoadInline">0%</b></span></div></div>
-</div></div>
-<div class="map-footer"><span><i></i> State changes update locally</span><span>Not calibrated for anatomy</span></div>
-</div><div class="card span-4"><h3>Session summary</h3><div class="stack"><div class="between">Events logged <b id="eventCount">0</b></div><div class="between">Contact load <b id="contactLoad">0%</b></div><div class="field"><label>Participant ID</label><select id="contactParticipant"><option value="">Select participant</option></select></div><div class="field"><label>Research observation</label><textarea id="contactObservation" placeholder="Optional notes without identifying information"></textarea></div><button onclick="logEvent()">Log current pattern</button><button class="secondary" onclick="exportCSV()">Export events CSV</button></div></div><div class="card span-12"><h3>Recent contact events</h3><div id="eventsTable" class="empty">No events logged.</div></div></div></section>
+
+<section id="contact" class="page hidden contact-page">
+  <div class="pagehead contact-pagehead">
+    <div class="contact-title">
+      <div class="eyebrow">Live-style demonstration</div>
+      <h2>EPG contact visualization</h2>
+      <p>Click electrode points to cycle contact states. The diagram is schematic and not anatomically calibrated.</p>
+    </div>
+    <div class="contact-toolbar no-print">
+      <div class="contact-controlbox">
+        <button class="contact-play" onclick="playDemo()">▶ <span>Play</span></button>
+        <button class="secondary" onclick="pauseDemo()">Ⅱ <span>Pause</span></button>
+        <button class="ghost" onclick="resetContacts()">↻ <span>Reset</span></button>
+        <button class="ghost" onclick="clearLog()">▤ <span>Clear log</span></button>
+      </div>
+      <div class="contact-clock"><span>Session time</span><strong id="sessionDuration">00:00:00</strong></div>
+    </div>
+  </div>
+  <div class="notice contact-notice"><strong>DEMO DATA</strong><span>Contact states are simulated or manually selected; they are not physiological measurements and are not for diagnosis or treatment.</span></div>
+  <div class="contact-dashboard-grid">
+    <div class="card contact-map-card">
+      <div class="contact-map-layout">
+        <div class="contact-map-main">
+          <div class="diagram-head">
+            <div><div class="diagram-eyebrow">ELECTRODE ARRAY · SCHEMATIC</div><h3>Palatal contact map</h3><p>Choose an electrode to view and change its state.</p></div>
+            <div class="diagram-chip"><span class="signal-dot"></span>INTERACTIVE DEMO</div>
+          </div>
+          <div class="palate-photo-stage">
+            <img class="palate-photo" src="assets/hero-palate.webp" alt="Illustrative palatal appliance with electrode contacts" loading="lazy">
+            <div id="palateDiagram" class="palate electrode-overlay" aria-label="Interactive schematic electrode array"></div>
+          </div>
+          <div class="palate-caption"><span>ANTERIOR</span><span>DEFAULT ELECTRODE POSITIONS</span><span>POSTERIOR</span></div>
+        </div>
+        <aside class="contact-key">
+          <div class="key-heading"><span>Contact state</span><span class="key-mode">DEMO</span></div>
+          <div class="key-row"><span class="state-swatch s0"></span><div><strong>No contact</strong><small>No tongue–palate contact</small></div><kbd>0</kbd></div>
+          <div class="key-row"><span class="state-swatch s1"></span><div><strong>Light</strong><small>Brief or light contact</small></div><kbd>1</kbd></div>
+          <div class="key-row"><span class="state-swatch s2"></span><div><strong>Moderate</strong><small>Sustained contact</small></div><kbd>2</kbd></div>
+          <div class="key-row"><span class="state-swatch s3"></span><div><strong>High</strong><small>Strong or continuous contact</small></div><kbd>3</kbd></div>
+          <div class="key-separator"></div>
+          <div class="quick-info-title">Quick info</div>
+          <p class="quick-info-copy">Click any electrode to cycle through its four contact states.</p>
+          <div class="quick-metrics">
+            <div><strong><span id="activeCount">0</span><small> / <span id="totalContacts">32</span></small></strong><span>Active contacts</span></div>
+            <div><strong id="contactLoadInline">0%</strong><span>Contact load</span></div>
+          </div>
+        </aside>
+      </div>
+      <div class="map-footer"><span><i></i> State changes update locally</span><span>Illustrative only · Not anatomically calibrated</span></div>
+    </div>
+    <div class="card contact-session-card">
+      <div class="session-card-heading"><h3>Session summary</h3><span class="session-status"><i></i> Demo mode</span></div>
+      <div class="session-stat-list">
+        <div><span class="stat-icon">◷</span><span>Events logged</span><strong id="eventCount">0</strong></div>
+        <div><span class="stat-icon">◉</span><span>Contact load</span><strong id="contactLoad">0%</strong></div>
+        <div><span class="stat-icon">⦿</span><span>Active contacts</span><strong id="activeContactsSummary">0 / 32</strong></div>
+        <div><span class="stat-icon">◷</span><span>Session duration</span><strong id="sessionDurationSidebar">00:00:00</strong></div>
+      </div>
+      <div class="session-divider"></div>
+      <div class="field contact-participant-field"><label for="contactParticipant">Participant</label><select id="contactParticipant"><option value="">Select participant</option></select></div>
+      <div class="field contact-observation-field"><label for="contactObservation">Research observation</label><textarea id="contactObservation" placeholder="Optional notes without identifying information"></textarea></div>
+      <div class="contact-action-buttons">
+        <button class="contact-log-button" onclick="logEvent()">▤ <span>Log current pattern</span></button>
+        <button class="contact-export-button secondary" onclick="exportCSV()">⇩ <span>Export events CSV</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="contact-lower-grid">
+    <div class="card chart-card">
+      <div class="chart-card-heading"><div><h3>Contact intensity map</h3><p>Current electrode states</p></div><span class="chart-unit">CURRENT</span></div>
+      <div id="contactIntensityMap" class="contact-intensity-map" aria-label="Contact intensity map"></div>
+      <div class="chart-legend"><span><i class="s0"></i>No contact</span><span><i class="s1"></i>Light</span><span><i class="s2"></i>Moderate</span><span><i class="s3"></i>High</span></div>
+    </div>
+    <div class="card chart-card">
+      <div class="chart-card-heading"><div><h3>Contact activity</h3><p>Active contacts in recent logged patterns</p></div><span class="chart-unit">LAST 20</span></div>
+      <div id="contactActivityChart" class="contact-activity-chart" aria-label="Activity chart"></div>
+    </div>
+    <div class="card chart-card event-log-card">
+      <div class="chart-card-heading"><div><h3>Event log</h3><p>Most recent saved patterns</p></div><span class="chart-unit">LOCAL</span></div>
+      <div id="eventsTable" class="contact-event-log empty">No events logged yet. Select a participant and log a pattern to begin.</div>
+    </div>
+  </div>
+</section>
 <section id="sensor" class="page hidden"><div class="pagehead"><div><div class="eyebrow">Hardware integration</div><h2>Wireless sensor connection</h2><p>Simulate data or import a CSV from an external test system. The custom sensor protocol is not implemented yet.</p></div></div><div class="grid"><div class="card span-5"><h3>Connection</h3><div class="stack"><div class="between">Connection state <span class="pill warn" id="bleState">Not connected</span></div><div class="field"><label>Device label</label><input id="deviceName" value="EPG-CP-Prototype-01"></div><div class="row"><button onclick="connectBLE()">Connect BLE</button><button class="secondary" onclick="simulateSensor()">Simulate data</button></div><div class="field"><label>Import sensor CSV</label><input type="file" accept=".csv,text/csv" onchange="importCSV(event)"></div><p id="bleMessage" class="muted">No device connected.</p></div></div><div class="card span-7"><h3>Incoming data preview</h3><div id="sensorPreview" class="empty">No sensor data.</div><div class="row" style="margin-top:12px"><button class="secondary" onclick="exportSensorCSV()">Export CSV</button><button class="ghost" onclick="clearSensor()">Clear data</button></div></div></div><div class="notice" style="margin-top:14px">BLE requires compatible hardware, browser support, HTTPS or localhost, and known GATT service/characteristic UUIDs. Device selection is not equivalent to receiving sensor data. Never test experimental intraoral electronics on a person.</div></section>
 <section id="speech" class="page hidden"><div class="pagehead"><div><div class="eyebrow">Media references</div><h2>Speech and video</h2><p>Preview media locally and associate notes with a participant. No automatic tongue tracking or phonetic accuracy scoring is implemented.</p></div></div><div class="grid"><div class="card span-6"><h3>Audio sample</h3><div class="field"><label>Choose audio</label><input id="audioFile" type="file" accept="audio/*"></div><audio id="audioPreview" controls class="hidden" style="width:100%;margin-top:12px"></audio><div class="field" style="margin-top:12px"><label>Speech notes</label><textarea id="audioNotes"></textarea></div></div><div class="card span-6"><h3>Video sample</h3><div class="field"><label>Choose video</label><input id="videoFile" type="file" accept="video/*"></div><video id="videoPreview" controls class="hidden" style="width:100%;max-height:230px;margin-top:12px"></video><div class="field" style="margin-top:12px"><label>Video notes</label><textarea id="videoNotes"></textarea></div></div><div class="card span-12"><h3>Session association</h3><div class="fields"><div class="field"><label>Participant ID</label><select id="mediaParticipant"><option value="">Select participant</option></select></div><div class="field"><label>Session label</label><input id="mediaSession" placeholder="Session code"></div></div><button style="margin-top:12px" onclick="saveMedia()">Save media metadata</button><p id="mediaStatus" class="muted"></p></div></div></section>
 <section id="reports" class="page hidden"><div class="pagehead"><div><div class="eyebrow">Export & documentation</div><h2>Research reports</h2><p>Generate a print-ready report from local demo records. Use Print → Save as PDF.</p></div><div class="row no-print"><button onclick="generateReport()">Generate report</button><button class="secondary" onclick="window.print()">Print / Save PDF</button></div></div><div class="card" id="reportContent"><div class="empty">Select Generate report to prepare a summary.</div></div></section><div class="footer">Wireless EPG-CP research prototype · Local browser storage · Not a medical device · Not clinically validated</div>
@@ -867,6 +1088,20 @@ makeGrid();renderAll();
 const allowedWorkspacePages=['dashboard','participants','palate','contact','sensor','speech','reports'];
 const requestedWorkspacePage=decodeURIComponent(location.hash.replace(/^#/,''));
 if(allowedWorkspacePages.includes(requestedWorkspacePage)) nav(requestedWorkspacePage);
+
+/* Contact dashboard interactive chart helpers */
+var contactDemoStart=0,contactElapsed=0,contactClockTimer=null;
+function contactPointData(){var fixed=[[44,26],[50,27],[56,26],[39,34],[44.5,35],[50,33],[55.5,35],[61,34],[37,42],[43.5,42],[50,41],[56.5,42],[63,42],[36,51],[43,51],[50,50],[57,51],[64,51],[35,60],[42.5,60],[50,58],[57.5,60],[65,60],[33,69],[41,69],[50,68],[59,69],[67,69],[32,78],[41,78],[59,78],[68,78]];if(states.length===32)return fixed.map(function(p,i){return{x:p[0],y:p[1],i:i}});var cols=+el('colCount').value||8,rows=Math.ceil(states.length/cols);return states.map(function(v,i){var row=Math.floor(i/cols),col=i%cols,used=Math.min(cols,states.length-row*cols),spread=Math.min(38,used*5.2);return{x:50-spread/2+(col+.5)*spread/used,y:25+(rows===1?0:row/(rows-1))*53,i:i}})}
+function draw(){var points=contactPointData(),labels=['No contact','Light','Moderate','High'];el('palateDiagram').innerHTML=points.map(function(p){var st=states[p.i]||0;return '<button type="button" class="electrode contact-electrode s'+st+'" data-electrode="'+(p.i+1)+'" style="left:'+p.x+'%;top:'+p.y+'%" aria-label="Electrode '+(p.i+1)+': '+labels[st]+'" aria-pressed="'+(st>0)+'" title="Electrode '+(p.i+1)+' · '+labels[st]+'" onclick="cycle('+p.i+')"><span>'+(p.i+1)+'</span></button>'}).join('');var active=states.filter(function(x){return x>0}).length,load=Math.round(active/(states.length||1)*100);el('activeCount').textContent=active;if(el('totalContacts'))el('totalContacts').textContent=states.length;el('contactLoad').textContent=load+'%';el('contactLoadInline').textContent=load+'%';el('eventCount').textContent=db.events.length;if(el('activeContactsSummary'))el('activeContactsSummary').textContent=active+' / '+states.length;el('activeCount').setAttribute('aria-live','polite');renderIntensityMap();renderActivityChart()}
+function renderIntensityMap(){var target=el('contactIntensityMap');if(!target)return;var pts=contactPointData(),cols=['#278ee5','#2ecb89','#f7c943','#ef5448'],labels=['No contact','Light','Moderate','High'];var circles=pts.map(function(p){var x=150+(p.x-50)*3.15,y=16+(p.y-23)*2.25,st=states[p.i]||0;return '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="6.3" fill="'+cols[st]+'" stroke="'+(st===0?'#b8d9f1':'#fff')+'" stroke-width="1.5"><title>Electrode '+(p.i+1)+': '+labels[st]+'</title></circle>'}).join('');target.innerHTML='<svg viewBox="0 0 300 176" role="img" aria-label="Current electrode state map"><path d="M150 9C105 9 59 26 37 61c-15 24-20 53-10 76 9 20 30 28 53 28h140c23 0 44-8 53-28 10-23 5-52-10-76C241 26 195 9 150 9Z" fill="#f6fafc" stroke="#d8e7ee" stroke-width="1.5"/><path d="M150 21V151" stroke="#dce9f0" stroke-dasharray="3 4"/><path d="M76 48c21-15 45-20 74-20s53 5 74 20M57 79c29-16 58-22 93-22s64 6 93 22M45 110c32-15 67-20 105-20s73 5 105 20" stroke="#e3edf2" stroke-width="1" fill="none"/>'+circles+'</svg>'}
+function renderActivityChart(){var target=el('contactActivityChart');if(!target)return;var events=db.events.slice(-20),W=500,H=190,L=36,R=12,T=14,B=30,PW=W-L-R,PH=H-T-B,grid='',bars='',ticks='';[0,8,16,24,32].forEach(function(v){var y=T+PH-(v/32)*PH;grid+='<line x1="'+L+'" y1="'+y+'" x2="'+(W-R)+'" y2="'+y+'" stroke="#e3ebf0" stroke-width="1"/><text x="'+(L-8)+'" y="'+(y+4)+'" text-anchor="end" fill="#7d8fa0" font-size="10">'+v+'</text>'});var step=PW/20,bw=Math.max(5,step*.55);for(var i=0;i<20;i++){var ev=events[i],value=ev?(ev.active!==undefined?Number(ev.active):(ev.states||[]).filter(function(v){return v>0}).length):0;value=Math.min(32,Math.max(0,value));var h=ev?Math.max(2,value/32*PH):0,x=L+i*step+(step-bw)/2,y=T+PH-h;if(ev)bars+='<rect x="'+x.toFixed(2)+'" y="'+y.toFixed(2)+'" width="'+bw.toFixed(2)+'" height="'+h.toFixed(2)+'" rx="2" fill="#25b7e7"><title>Event '+(db.events.length-events.length+i+1)+': '+value+' active contacts</title></rect>'} [1,5,10,15,20].forEach(function(v){var x=L+(v-.5)*step;ticks+='<text x="'+x+'" y="'+(H-9)+'" text-anchor="middle" fill="#7d8fa0" font-size="10">'+v+'</text>'});target.innerHTML='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Active contacts across recent logged events">'+grid+'<line x1="'+L+'" y1="'+T+'" x2="'+L+'" y2="'+(T+PH)+'" stroke="#9fb1be"/><line x1="'+L+'" y1="'+(T+PH)+'" x2="'+(W-R)+'" y2="'+(T+PH)+'" stroke="#9fb1be"/>'+bars+ticks+(!events.length?'<text x="'+(L+PW/2)+'" y="'+(T+PH/2)+'" text-anchor="middle" fill="#91a1ad" font-size="11">Log a pattern to see activity</text>':'')+'</svg>'}
+function formatSessionClock(ms){var sec=Math.floor(ms/1000),h=String(Math.floor(sec/3600)).padStart(2,'0'),m=String(Math.floor(sec%3600/60)).padStart(2,'0'),s=String(sec%60).padStart(2,'0');return h+':'+m+':'+s}
+function updateSessionClock(){var ms=contactElapsed+(playing&&contactDemoStart?Date.now()-contactDemoStart:0),txt=formatSessionClock(ms);if(el('sessionDuration'))el('sessionDuration').textContent=txt;if(el('sessionDurationSidebar'))el('sessionDurationSidebar').textContent=txt}
+function playDemo(){if(playing)return;contactDemoStart=Date.now();playing=setInterval(function(){states=states.map(function(){return Math.random()<.65?0:1+Math.floor(Math.random()*3)});makeGrid()},750);contactClockTimer=setInterval(updateSessionClock,250);updateSessionClock()}
+function pauseDemo(){if(playing){clearInterval(playing);playing=null;if(contactDemoStart)contactElapsed+=Date.now()-contactDemoStart;contactDemoStart=0}if(contactClockTimer){clearInterval(contactClockTimer);contactClockTimer=null}updateSessionClock()}
+function resetContacts(){pauseDemo();contactElapsed=0;updateSessionClock();states.fill(0);makeGrid()}
+function clearLog(){pauseDemo();if(confirm('Clear all locally stored contact events?')){db.events=[];persist()}}
+function renderEvents(){var target=el('eventsTable');if(!target)return;if(!db.events.length){target.className='contact-event-log empty';target.innerHTML='No events logged yet. Select a participant and log a pattern to begin.';return}var labels=['No contact','Light','Moderate','High'];var rows=db.events.slice(-8).reverse().map(function(e,k){var idx=db.events.length-1-k,prev=idx>0?db.events[idx-1]:null,st=e.states||[],prevst=prev&&prev.states||[],changed=[];for(var i=0;i<st.length;i++)if(!prev||prevst[i]!==st[i])changed.push(i);var elec=changed.length?changed[changed.length-1]:Math.max(0,st.findIndex(function(v){return v>0})),state=st[elec]||0,active=Number(e.active!==undefined?e.active:st.filter(function(v){return v>0}).length),load=Math.round(active/(st.length||states.length||1)*100),raw=String(e.time||'—'),match=raw.match(/\b\d{1,2}:\d{2}(?::\d{2})?(?:\s?[AP]M)?\b/i),time=match?match[0]:raw;return '<tr><td>'+(db.events.length-k)+'</td><td title="'+esc(raw)+'">'+esc(time)+'</td><td>'+(st.length?elec+1:'—')+'</td><td><span class="event-state s'+state+'">'+(labels[state]||'Pattern')+'</span></td><td>'+load+'%</td></tr>'}).join('');target.className='contact-event-log';target.innerHTML='<div class="tablewrap"><table class="contact-event-table"><thead><tr><th>#</th><th>Time</th><th>Electrode</th><th>State</th><th>Contact load</th></tr></thead><tbody>'+rows+'</tbody></table></div>'}
 </script>
 </body>
 </html>
