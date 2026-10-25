@@ -761,6 +761,73 @@ body>header#top{display:none}
  #technology .reports-card .showcase-image{width:58%!important;height:80%!important}
 }
 
+
+/* Final homepage research-card refinement */
+#technology.tool-showcase{position:relative;padding:42px clamp(20px,3.2vw,48px) 44px!important;background:#f7f9f8!important;color:#101b20!important;overflow:hidden}
+#technology .section-heading{max-width:1500px;margin:0 auto 23px!important;display:flex!important;justify-content:space-between!important;align-items:flex-end!important;gap:24px!important}
+#technology .section-heading>div{min-width:0}
+#technology .section-heading .site-kicker{font-size:10px!important;letter-spacing:.2em!important;font-weight:850!important;color:#087e88!important;margin:0 0 9px!important}
+#technology .section-heading h2{font-size:clamp(28px,3vw,40px)!important;line-height:1.08!important;letter-spacing:-.055em!important;font-weight:780!important;color:#111c20!important;margin:0!important}
+#technology .section-heading .text-link{display:inline-flex!important;align-items:center;gap:8px!important;white-space:nowrap!important;border-bottom:1px solid #b7cbd0!important;padding:0 0 7px!important;text-decoration:none!important;font-size:11px!important;font-weight:700!important;color:#3d5963!important;transition:color .2s,border-color .2s}
+#technology .section-heading .text-link:hover{color:#078b97!important;border-color:#078b97!important}
+#technology .showcase-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important;max-width:1500px!important;margin:0 auto!important}
+#technology .showcase-card{height:222px!important;min-width:0!important;position:relative!important;isolation:isolate!important;overflow:hidden!important;padding:22px 20px!important;border:1px solid #243b40!important;border-radius:10px!important;background:#10191c!important;color:#fff!important;text-decoration:none!important;box-shadow:0 10px 24px #17313b0d!important;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease!important}
+#technology .showcase-card:before{content:""!important;position:absolute!important;inset:0!important;z-index:-2!important;opacity:1!important;background:radial-gradient(ellipse at 85% 90%,#34494d 0%,#182427 42%,#101719 85%)!important}
+#technology .showcase-card:after{content:""!important;position:absolute!important;inset:0!important;z-index:0!important;pointer-events:none!important;background:linear-gradient(100deg,#091216f0 0%,#0b171bdc 37%,#0b171b40 75%,#0b171b05 100%)!important}
+#technology .showcase-card.palate-card:before{background:radial-gradient(ellipse at 82% 84%,#7d5a4d 0%,#3b302c 38%,#171b1b 83%)!important}
+#technology .showcase-card.mapping-card:before{background:radial-gradient(ellipse at 84% 85%,#14617a 0%,#0a3543 43%,#09171c 84%)!important}
+#technology .showcase-card.sensor-card:before{background:radial-gradient(ellipse at 83% 86%,#365960 0%,#172f35 40%,#0d191b 82%)!important}
+#technology .showcase-card.reports-card:before{background:radial-gradient(ellipse at 83% 84%,#62645a 0%,#303532 34%,#161b1d 83%)!important}
+#technology .showcase-card:focus-visible{outline:3px solid #28c6cf!important;outline-offset:4px!important}
+#technology .showcase-card:hover{transform:translateY(-3px)!important;border-color:#668991!important;box-shadow:0 18px 30px #1939421b!important}
+#technology .showcase-title{position:relative!important;z-index:3!important;max-width:57%!important;padding:0!important}
+#technology .showcase-title>span{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:33px!important;height:23px!important;padding:0 8px!important;border:1px solid #f3ffff80!important;border-radius:999px!important;background:#06121540!important;color:#e9fbfd!important;font-size:9px!important;letter-spacing:.09em!important;font-weight:700!important}
+#technology .showcase-title h3{font-size:clamp(16px,1.35vw,20px)!important;font-weight:760!important;line-height:1.15!important;letter-spacing:-.04em!important;color:#fff!important;margin:15px 0 8px!important}
+#technology .showcase-title p{max-width:185px!important;margin:0!important;color:#dce8e9!important;font-size:10px!important;line-height:1.55!important;font-weight:450!important;text-wrap:pretty!important}
+#technology .showcase-image{position:absolute!important;z-index:2!important;right:-1%!important;bottom:-2%!important;width:67%!important;height:88%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center bottom!important;opacity:1!important;display:block!important;background:transparent!important;border:0!important;border-radius:0!important;mix-blend-mode:normal!important;mask-image:none!important;-webkit-mask-image:none!important;filter:drop-shadow(0 13px 12px #0005)!important;pointer-events:none!important;transition:transform .26s ease,filter .26s ease!important}
+#technology .showcase-card:hover .showcase-image{transform:translateY(-4px) scale(1.025)!important;filter:drop-shadow(0 17px 15px #0007)!important}
+#technology .showcase-card.palate-card .showcase-image{width:66%!important;height:89%!important;right:-1%!important;bottom:-2%!important}
+#technology .showcase-card.mapping-card .showcase-image{width:67%!important;height:88%!important;right:-1%!important;bottom:-1%!important}
+#technology .showcase-card.sensor-card .showcase-image{width:65%!important;height:84%!important;right:0!important;bottom:0!important}
+#technology .showcase-card.reports-card .showcase-image{width:62%!important;height:89%!important;right:0!important;bottom:-2%!important}
+#technology .circle-arrow{position:absolute!important;z-index:4!important;left:20px!important;bottom:17px!important;display:grid!important;place-items:center!important;width:32px!important;height:32px!important;border:1px solid #e5f8f9bd!important;border-radius:50%!important;background:#07151965!important;color:#fff!important;font-size:16px!important;line-height:1!important;transition:background .2s ease,transform .2s ease,border-color .2s ease!important}
+#technology .showcase-card:hover .circle-arrow{background:#088a98!important;border-color:#088a98!important;transform:translate(2px,-2px)!important}
+@media(max-width:1180px){
+ #technology.tool-showcase{padding:36px 24px 38px!important}
+ #technology .showcase-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
+ #technology .showcase-card{height:230px!important;padding:21px 20px!important}
+ #technology .showcase-title{max-width:51%!important}
+ #technology .showcase-title h3{font-size:19px!important}
+ #technology .showcase-title p{max-width:180px!important;font-size:10px!important}
+ #technology .showcase-image{width:64%!important;height:88%!important;right:0!important}
+ #technology .showcase-card.palate-card .showcase-image{width:65%!important;height:90%!important}
+ #technology .showcase-card.mapping-card .showcase-image{width:64%!important;height:87%!important}
+ #technology .showcase-card.sensor-card .showcase-image{width:62%!important;height:83%!important}
+ #technology .showcase-card.reports-card .showcase-image{width:60%!important;height:88%!important}
+}
+@media(max-width:620px){
+ #technology.tool-showcase{padding:30px 16px 32px!important}
+ #technology .section-heading{align-items:flex-start!important;margin-bottom:18px!important;gap:12px!important}
+ #technology .section-heading h2{font-size:29px!important;max-width:330px!important}
+ #technology .section-heading .site-kicker{font-size:9px!important;margin-bottom:7px!important}
+ #technology .section-heading .text-link{font-size:10px!important;margin-top:29px!important}
+ #technology .showcase-grid{grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+ #technology .showcase-card{height:216px!important;padding:19px!important;border-radius:9px!important}
+ #technology .showcase-title{max-width:53%!important}
+ #technology .showcase-title h3{font-size:19px!important;margin:13px 0 7px!important}
+ #technology .showcase-title p{max-width:175px!important;font-size:10px!important}
+ #technology .showcase-image{width:62%!important;height:83%!important;right:-1%!important}
+ #technology .showcase-card.palate-card .showcase-image{width:64%!important;height:87%!important}
+ #technology .showcase-card.mapping-card .showcase-image{width:63%!important;height:86%!important}
+ #technology .showcase-card.sensor-card .showcase-image{width:62%!important;height:80%!important}
+ #technology .showcase-card.reports-card .showcase-image{width:59%!important;height:87%!important}
+ #technology .circle-arrow{left:18px!important;bottom:16px!important;width:30px!important;height:30px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ #technology .showcase-card,#technology .showcase-image,#technology .circle-arrow{transition:none!important}
+ #technology .showcase-card:hover{transform:none!important}
+}
+
 </style></head><body>
 
 <nav id="top" class="site-nav" aria-label="Main website navigation">
